@@ -4,7 +4,7 @@ function App() {
       <div className="mx-auto bg-darkCard">Search Bar</div>
       <div className="mx-auto flex w-11/12 flex-col justify-center bg-darkCard align-middle lg:w-4/6">
         <div className="flex justify-center align-middle">
-          <img src="/oval-dp.svg" alt="Profile pic" />
+          <img src="oval-dp.svg" alt="Profile pic" />
           <div>
             <h1>The Octocat</h1>
             <a href="/">@octocat</a>

@@ -14,32 +14,4 @@ body {
 }
 
 @layer utilities {
-  /* .grid-container {
-    display: grid;
-    grid-template-areas:
-      'a b . c'
-      'a d d d'
-      '. e e e'
-      '. f f f';
-    
-  }
-
-  .item1 {
-    grid-area: 'a';
-  }
-  .item2 {
-    grid-area: 'b';
-  }
-  .item3 {
-    grid-area: 'c';
-  }
-  .item4 {
-    grid-area: 'd';
-  }
-  .item5 {
-    grid-area: 'e';
-  }
-  .item6 {
-    grid-area: 'f';
-  } */
 }

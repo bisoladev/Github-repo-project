@@ -11,6 +11,12 @@ body {
 @tailwind utilities;
 
 @layer components {
+  .grid-container {
+    @apply grid-template-areas: "area-one area-two area-three"
+                                "area-four area-five area-six"
+                                "area-seven area-eight area-nine"
+                                "area-ten area-eleven area-twelve";
+  }
 }
 
 @layer utilities {

@@ -1,6 +1,6 @@
 function SearchBar() {
   return (
-    <div className="mx-auto mb-5 flex w-11/12 max-w-[730px]  rounded-2xl bg-darkCard p-2.5 align-middle lg:w-4/6">
+    <div className="card-shadow mx-auto mb-5 flex w-11/12 max-w-[730px] rounded-2xl bg-lightCard p-2.5 align-middle dark:bg-darkCard dark:shadow-none lg:w-4/6">
       <div className="my-auto px-1 min-[350px]:px-2 md:px-6">
         <svg
           className="w-[20px] md:w-auto"
@@ -21,7 +21,7 @@ function SearchBar() {
 
       <input
         placeholder="Search Github username..."
-        className="w-full bg-transparent pl-1 placeholder:text-xs placeholder:text-white focus:outline-none max-[350px]:pr-1 sm:pl-2 sm:placeholder:text-base"
+        className="w-full bg-transparent pl-1 font-normal placeholder:text-xs placeholder:text-lightText focus:outline-none dark:placeholder:text-white max-[350px]:pr-1 sm:pl-2 sm:placeholder:text-base"
       />
 
       <p className="my-auto hidden whitespace-nowrap px-4 pt-1 text-xs text-redText md:px-8 md:text-base">

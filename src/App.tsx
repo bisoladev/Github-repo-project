@@ -1,11 +1,13 @@
+import SearchBar from './components/SearchBar';
+
 function App() {
   return (
     <div className="flex h-screen w-screen  flex-col justify-center bg-bgDark align-middle text-white">
-      <div className="mx-auto bg-darkCard">Search Bar</div>
+      <SearchBar />
       <div className="mx-auto flex w-11/12 max-w-[730px] flex-col justify-center rounded-2xl bg-darkCard p-8 align-middle md:p-10 lg:w-4/6">
         <div className="grid-rows-auto grid grid-cols-[70px_auto] gap-x-6 gap-y-8 md:grid-cols-[150px_auto]">
           <div className=" col-start-1 col-end-2 row-start-1 row-end-3 h-[70px] w-[70px] rounded-full bg-bgDark md:h-[118px] md:w-[118px]">
-            <img src="/src/assets/oval-dp.svg" alt="Profile pic" />
+            <img src="/img/oval-dp.svg" alt="Profile pic" />
           </div>
           <div className="col-start-2 col-end-3 row-start-1 row-end-2">
             <div className="flex flex-col lg:flex-row lg:justify-between">

@@ -25,15 +25,14 @@ function App() {
               </div>
             </div>
           </div>
-          {/* <div className="col-start-2 col-end-5 row-start-1 row-end-2 lg:col-start-4"></div> */}
           <div className="col-start-1 col-end-3 row-start-2 row-end-3 lg:col-start-2">
-            <p className="text-[13px] md:text-[15px]">
+            <p className="text-[13px] md:pt-8 md:text-[15px] lg:pt-0">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
               odio. Quisque volutpat mattis eros.
             </p>
           </div>
-          <div className="col-start-1 col-end-3 row-start-3 row-end-4 mb-4 rounded-[10px] bg-bgDark px-5 py-3 md:px-10 lg:col-start-2">
-            <ul className="grid grid-cols-3 gap-8">
+          <div className="col-start-1 col-end-3 row-start-3 row-end-4 mb-4 rounded-[10px] bg-bgDark px-6 py-3 md:px-10 lg:col-start-2">
+            <ul className="grid grid-cols-3 gap-5">
               <li>
                 <p className="text-[11px] md:text-[13px]">Repos</p>
                 <p className="text-base font-bold md:text-[22px]">8</p>
@@ -49,7 +48,7 @@ function App() {
             </ul>
           </div>
           <div className="col-start-1 col-end-3 row-start-4 row-end-5 lg:col-start-2">
-            <ul className="grid grid-cols-1 gap-x-10 gap-y-5 text-[15px] sm:grid-cols-2">
+            <ul className="grid grid-cols-1 gap-x-10 gap-y-5 text-[15px] min-[500px]:grid-cols-2">
               <li className="flex">
                 <svg
                   width="14"

@@ -52,7 +52,7 @@ function App() {
 
   return (
     // <div className="h-screen bg-bgLight transition-all dark:bg-bgDark">
-    <div className="flex h-[100%] w-screen flex-col justify-center bg-bgLight py-10 align-middle text-white  dark:bg-bgDark">
+    <div className="flex h-[100%] w-screen flex-col justify-center bg-bgLight py-10 align-middle text-white dark:bg-bgDark  lg:min-h-[900px]">
       <div className="mx-auto flex w-11/12 max-w-[730px] justify-between px-2 py-8 align-middle lg:w-4/6">
         <h1 className="text-[26px] font-bold text-[#222731] dark:text-white">
           devfinder

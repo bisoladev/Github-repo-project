@@ -113,7 +113,7 @@ function App() {
               <img
                 src={data?.avatar_url ?? '/img/oval-dp.svg'}
                 alt="Profile pic"
-                className="rounded-full"
+                className="h-[70px] w-[70px] rounded-full md:h-[118px] md:w-[118px]"
               />
             </div>
             <div className="col-start-2 col-end-3 row-start-1 row-end-2">

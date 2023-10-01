@@ -14,6 +14,10 @@ body {
   .card-shadow {
     @apply shadow-[0px_16px_30px_-10px_rgba(70,96,187,0.2)];
   }
+
+  .display-none {
+    @apply hidden;
+  }
 }
 
 @layer utilities {

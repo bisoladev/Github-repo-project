@@ -1,8 +1,44 @@
+import { useEffect, useState } from 'react';
 import SearchBar from './components/SearchBar';
+import { moon, sun } from './icons';
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
+    // Check for system preference
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return true;
+    }
+    // Check for manual preference
+    return localStorage.getItem('darkMode') === 'true';
+  });
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('darkMode', 'true');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('darkMode', 'false');
+    }
+  }, [isDarkMode]);
+
   return (
     <div className="flex h-screen w-screen flex-col justify-center bg-bgLight align-middle text-white dark:bg-bgDark">
+      <div className="mx-auto flex w-11/12 max-w-[730px] justify-between px-2 py-8 align-middle lg:w-4/6">
+        <h1 className="text-[26px] font-bold text-[#222731] dark:text-white">
+          devfinder
+        </h1>
+        <div className="my-auto flex align-middle">
+          <p className="text-[13px] font-bold tracking-[2.5px] text-[#222731] dark:text-[#90A4D4]">
+            {isDarkMode ? 'LIGHT' : 'DARK'}
+          </p>{' '}
+          <span className="pl-4">
+            <button type="button" onClick={() => setIsDarkMode(!isDarkMode)}>
+              {isDarkMode ? sun : moon}
+            </button>
+          </span>
+        </div>
+      </div>
       <SearchBar />
       <div className="card-shadow mx-auto flex w-11/12 max-w-[730px] flex-col justify-center rounded-2xl bg-lightCard p-8 align-middle text-lightText dark:bg-darkCard dark:text-white dark:shadow-none md:p-10 lg:w-4/6">
         <div className="grid-rows-auto grid grid-cols-[70px_auto] gap-x-6 gap-y-8 md:grid-cols-[150px_auto]">

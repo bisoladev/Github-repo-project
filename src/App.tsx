@@ -113,10 +113,11 @@ function App() {
             </div>
           </div>
         </form>
-        {isFetching ? (
-          <FullPageSpinner />
-        ) : (
-          <div className="card-shadow mx-auto flex w-11/12 max-w-[730px] flex-col justify-center rounded-2xl bg-lightCard p-8 align-middle text-lightText dark:bg-darkCard dark:text-white dark:shadow-none md:p-10 lg:w-4/6">
+
+        <div className="card-shadow mx-auto flex min-h-[410px] w-11/12 max-w-[730px] flex-col justify-center rounded-2xl bg-lightCard p-8 align-middle text-lightText dark:bg-darkCard dark:text-white dark:shadow-none md:p-10 lg:w-4/6">
+          {isFetching ? (
+            <FullPageSpinner />
+          ) : (
             <div className="grid-rows-auto grid grid-cols-[70px_auto] gap-x-6 gap-y-8 md:grid-cols-[150px_auto]">
               <div className=" col-start-1 col-end-2 row-start-1 row-end-3 h-[70px] w-[70px] rounded-full bg-bgLight dark:bg-bgDark md:h-[118px] md:w-[118px]">
                 <img
@@ -299,8 +300,8 @@ function App() {
                 </ul>
               </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );

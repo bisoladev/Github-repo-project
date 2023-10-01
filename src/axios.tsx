@@ -1,9 +1,8 @@
 import axios from 'axios';
 
 const fetchUserData = async (username: string) => {
-  const authToken = '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'; // Replace with your GitHub token
   const headers = {
-    Authorization: `Bearer ${authToken}`,
+    Authorization: `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`,
     'X-GitHub-Api-Version': '2022-11-28',
   };
 

@@ -69,7 +69,7 @@ function App() {
           </div>
         </div>
         <form onSubmit={handleSubmit}>
-          <div className="card-shadow mx-auto mb-5 flex w-11/12 max-w-[730px] rounded-2xl bg-lightCard p-2.5 align-middle dark:bg-darkCard dark:shadow-none lg:w-4/6">
+          <div className="card-shadow mx-auto mb-5 flex w-11/12 max-w-[730px] rounded-2xl bg-lightCard p-2.5 py-5 align-middle dark:bg-darkCard dark:shadow-none lg:w-4/6">
             <div className="my-auto px-1 min-[350px]:px-2 md:px-6">
               <svg
                 className="w-[20px] md:w-auto"

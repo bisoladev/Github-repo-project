@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^4.35.3",
+    "@types/moment": "^2.13.0",
     "axios": "^1.5.1",
     "dayjs": "^1.11.10",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",

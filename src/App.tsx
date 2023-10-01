@@ -2,7 +2,8 @@
 /* eslint-disable no-nested-ternary */
 import { useEffect, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import * as dayjs from 'dayjs';
+// import * as dayjs from 'dayjs';
+import moment from 'moment';
 import { moon, sun } from './icons';
 import fetchUserData from './axios';
 import FullPageSpinner from './Spinner/FullPageSpinner';
@@ -147,9 +148,7 @@ function App() {
                     }`}
                   >
                     {data?.created_at
-                      ? `Joined ${dayjs(data?.created_at).format(
-                          'DD MMM YYYY'
-                        )}`
+                      ? `Joined ${moment().format('Do MMM YYYY')}`
                       : 'Not available'}
                   </p>
                 </div>

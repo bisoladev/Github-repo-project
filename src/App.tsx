@@ -2,7 +2,6 @@
 /* eslint-disable no-nested-ternary */
 import { useEffect, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
-// import * as dayjs from 'dayjs';
 import moment from 'moment';
 import { moon, sun } from './icons';
 import fetchUserData from './axios';
@@ -52,7 +51,6 @@ function App() {
   };
 
   return (
-    // <div className="h-screen bg-bgLight transition-all dark:bg-bgDark">
     <div className="flex h-[100%] w-screen flex-col justify-center bg-bgLight py-10 align-middle text-white dark:bg-bgDark  lg:min-h-[900px]">
       <div className="mx-auto flex w-11/12 max-w-[730px] justify-between px-2 py-8 align-middle lg:w-4/6">
         <h1 className="text-[26px] font-bold text-[#222731] dark:text-white">
@@ -92,7 +90,6 @@ function App() {
           <input
             placeholder="Search Github username..."
             value={username}
-            // onKeyDown={handleKeyDownSearchDown}
             onChange={handleInputChange}
             className="w-full bg-transparent pl-1 font-normal text-lightText placeholder:text-xs placeholder:text-lightText focus:outline-none dark:text-white dark:placeholder:text-white max-[350px]:pr-1 sm:pl-2 sm:placeholder:text-base"
           />
@@ -346,7 +343,6 @@ function App() {
         )}
       </div>
     </div>
-    // </div>
   );
 }
 
